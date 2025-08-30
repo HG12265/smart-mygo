@@ -1,0 +1,67 @@
+body{
+  background-image: url('logup4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 ,a{
+  font-size: 35px;
+  color: white;
+  margin-top: 40px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+#login{
+  background-color: deeppink;
+  border: 1px solid violet;
+  padding: 1px 8px;
+  border-radius: 30px;
+}
+
+div{
+  display: flex;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 180px;
+  margin-right: 100px;
+}
+
+table, tr, td{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  padding: 0px 20px;
+}
+
+input{
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 3px;
+  background-color: floralwhite;
+}
+
+#submit{
+  background-color: blueviolet;
+  color: white;
+  padding: 8px 15px;
+}
+
+table{
+  margin-left: 90px;
+  margin-bottom: 80px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background-image: url('logupback1.jpg');
+  
+}

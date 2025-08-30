@@ -1,0 +1,137 @@
+body{
+  background-color: whitesmoke;
+  justify-items: center;
+  font-family: Sans-serif;
+}
+
+.gow{
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 740px;
+  box-shadow: 12px 12px lightgray;
+}
+
+div img{
+  margin-left: 25px;
+}
+
+h1{
+  background-color: chartreuse;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: 240px;
+  text-align: center;
+  box-shadow: 8px 8px rgba(0,0,0,0.1);
+}
+table,tr,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#cash{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#order{
+  border: 1px solid black;
+  height: 60px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+#back{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#ordertable{
+  background-color: cornsilk;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#ordertable td{
+  padding: 10px;
+  font-weight: bold;
+}
+
+#ordertable input{
+  font-size: 22px;
+  font-weight: bold;
+  
+}
+
+#ordertable select{
+  font-size: 30px;
+}
+
+
+
+#comeone{
+  display: none;
+  margin-bottom: 100px;
+}
+
+.style, a{
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24.5px;
+}
+
+#style{
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+  padding: 2.5px;
+  margin: 8px;
+}
+
+input[type=submit] {
+    zoom: 1.3;
+}
+
+#xmark{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  float: right;
+}
+
+header{
+  background-color: whitesmoke;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  box-shadow: 5px 5px 5px 5px gray;
+  justify-content: space-between;
+}
+#logo{
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+h2 a{
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+h3{
+  line-height: 15px;
+  font-size: 35px;
+}
+

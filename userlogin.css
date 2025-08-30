@@ -1,0 +1,62 @@
+body{
+  background-image: url('loginback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+form{
+  margin-left: 180px;
+  margin-top: 50px;
+}
+label{
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 100px;
+  color: white;
+}
+input{
+  font-weight: bold;
+  font-size: 25px;
+  background-color: lightyellow;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+#submit{
+  background-color: blueviolet;
+  color: white;
+  padding: 4px 8px;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+#rem{
+  margin-left: 0px;
+}
+input[type=checkbox] {
+    zoom: 1.5;
+}
+
+h1 ,a{
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  
+}
+
+#login{
+  background-color: deeppink;
+  border: 1px solid violet;
+  padding: 1px 8px;
+  border-radius: 30px;
+  margin-left: 100px;
+}
+div{
+  display: flex;
+}
+h2{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 110px;
+}
+

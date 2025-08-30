@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+ 
+  <title>SMART MYGO</title>
+  <link rel="stylesheet" href="Project main.css">
+  <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+     function show() {
+       document.getElementById("card").style.display = "block";
+     }
+  function cancel() {
+       document.getElementById("card").style.display = "none";
+     }
+  function one(id) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = (element.style.display === "none" || element.style.display === "") ? "block" : "none";
+        }
+    }
+  </script>
+</head>
+<body>
+  <div id="header">
+    <img id="logo" src="logo1.jpg" height="80px" width="80px">
+    <h1 id="smart">SMART MYGO</h1>
+    <div id="searchicon">
+    <input id="search" type="search" placeholder="Search..." ><i id="find" class="fa-solid fa-magnifying-glass"></i> 
+    </div> 
+    <button class="card1" onclick="show();"><i class="fa-regular fa-heart"></i></button>
+    <a href="userlogin.html"><i id="user" class="fa-solid fa-user"></i></a>
+  </div>
+    <div id="card">
+      <button id="xmark" onclick="cancel();"><i class="fa-solid fa-xmark"></i></button>
+      <h1 id="wish">WISHLIST</h1>
+      <h1 id="add1" class="xmark">Real me p1 5g &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add1');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add2" class="xmark">Poco M6 5g &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add2');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add3" class="xmark">Vivo T3X5g &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add3');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add4" class="xmark">Real me pad 2 lite &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add4');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add5" class="xmark">Samsung Galaxy TabS10+ &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add5');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add6" class="xmark">Mi Xiaomi Pad 6 &nbsp &nbsp &nbsp &nbsp <button id="delet" onclick="one('add6');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add7" class="xmark">boAt 20000 mAh22.5WPower Bank<button id="delet" onclick="one('add7');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add8" class="xmark">FAHIG 50000 mAh22WPower Bank<button id="delet" onclick="one('add8');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add9" class="xmark">Portronics 20000 mAh22.5WPower Bank<button id="delet" onclick="one('add9');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add10" class="xmark">Aroma NB119 Titanium Headset<button id="delet" onclick="one('add10');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add11" class="xmark">Mivi Duo pods i3 Tws Headset<button id="delet" onclick="one('add11');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add12" class="xmark">TRIGGR Trinity with 40mm Drivers headset<button id="delet" onclick="one('add12');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add13" class="xmark">AESTMO back cover<button id="delet" onclick="one('add13');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add14" class="xmark">Foncase Bumper Case back cover<button id="delet" onclick="one('add14');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add15" class="xmark">Forego back cover<button id="delet" onclick="one('add15');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add16" class="xmark">C TYPE CHARGER<button id="delet" onclick="one('add16');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add17" class="xmark">NORMAL TYPE CHARGER<button id="delet" onclick="one('add17');"><i class="fa-solid fa-trash"></i></button></h1>
+      <h1 id="add18" class="xmark">MULTIPIN FAST CHARGER<button id="delet" onclick="one('add18');"><i class="fa-solid fa-trash"></i></button></h1>
+    </div>
+  <h2 id="nav"><a href="#">HOME</a> <a href="#about">ABOUT</a> <a href="#category">CATEGORIES</a> <a href="#product">PRODUCTS</a> <a href="#contact">CONTACT</a></h2>
+  <div id="banner">
+  <h1 id="welcome" class="banner">WELCOME</h1>
+  <h2 id="premium" class="banner">Premium Quality</h2>
+  <h1 id="mobile" class="banner">Mobile Phones, Tablets</h1>
+  <h1 id="and" class="banner">And Accessories!</h1>
+  <button id="shop"><a href="#product">Shop--></a></button>
+  </div>
+  <h1 id="about" class="about">ABOUT</h1>
+  <p id="para">Welcome to <b>SMART MYGO</b>, your trusted destination for the latest mobile phones, accessories, and unbeatable deals!
+    <br><br>
+At <b>SMART MYGO</b>, we’re passionate about keeping you connected to the world. Whether you're looking for the newest smartphones, budget-friendly options, or cutting-edge gadgets, we have something for everyone.
+    <br><br>
+<b>Why Choose Us?</b>
+    <br><br>
+<b>Top Brands:</b> We offer a wide range of devices from leading manufacturers like Apple, Samsung, Xiaomi, OnePlus, and more.<br><br>
+<b>Best Prices:</b> Enjoy competitive prices and exclusive discounts that make upgrading your phone affordable.<br><br>
+<b>Quality Guaranteed:</b> All our products are 100% authentic and come with warranties for your peace of mind.<br><br>
+<b>Fast & Secure Delivery:</b> Get your favorite gadgets delivered to your doorstep quickly and safely.<br><br>
+<b>Customer Support:</b> Our friendly team is here to assist you every step of the way.<br><br>
+<b>Our Mission</b><br><br>
+We aim to provide a seamless shopping experience, offering cutting-edge technology at your fingertips. Our dedication to quality, service, and affordability ensures you stay ahead in the tech world.
+<br><br>
+Ready to find your perfect phone? Browse our collection today and experience the SMART MYGO difference!</p>
+<h1 id="category" class="about">CATEGORIES</h1>
+ <div class="box1">
+        <a href="#phone"><img src="mobilephone.jpg" height="180px" width="180px"></a>
+        <h3>Mobile <br>Phones</h3>
+    </div>
+  <div class="box1">
+        <a href="#tab"><img src="tablet.jpg" height="210px" width="170px"></a>
+        <h3>Tablets</h3>
+    </div>
+  <div class="box1">
+        <a href="#power"><img src="powerbank.jpg" height="180px" width="180px"></a>
+        <h3>Power<br>Bank</h3>
+  </div>
+  <div class="box1">
+        <a href="#head"><img src="headset.webp" height="180px" width="180px"></a>
+        <h3>Bluetooth<br>Headsets</h3>
+    </div>
+  <div class="box1">
+       <a href="#backcover"> <img src="backcover.jpg" height="180px" width="180px"></a>
+        <h3>Back <br>Cover</h3>
+    </div>
+  <div class="box1">
+       <a href="#charger"> <img src="charger.jpg" height="180px" width="180px"></a>
+        <h3>Phone <br>Charger</h3>
+    </div>
+  <h1 id="product" class="about">PRODUCTS</h1>
+  <h1 id="phone" class="underline"><u>MOBILE PHONES</u></h1>
+  <div class="box2">
+        <img src="phone1.jpg" width="170px" height="200px">
+        <h3>Real me p1 5g</h3>     
+        <h4>Rs.15,999</h4>
+    <h5><a href="phone1.html">MORE DETAITS</a></h5>
+    <button onclick="one('add1');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box2">
+        <img src="phone2.jpg" width="170px" height="200px">
+        <h3>Poco M6 5g</h3>     
+        <h4>Rs.8999</h4>
+        <h5><a href="phone2.html">MORE DETAITS</a></h5>
+     <button onclick="one('add2');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box2">
+        <img src="phone3.jpg" width="170px" height="200px">
+        <h3>Vivo T3X5g</h3>     
+        <h4>Rs.13,999</h4> 
+        <h5><a href="phone3.html">MORE DETAITS</a></h5>
+     <button onclick="one('add3');" class="add">ADD WISHLIST</button>
+    </div>
+  <hr>
+  <h1 id="tab" class="underline"><u>TABLETS</u></h1>
+  <div class="box3">
+        <img src="tab1.jpg" width="170px" height="200px">
+        <h3>Real me pad<br>2 lite</h3>     
+        <h4>Rs.22,999</h4>
+     <h5><a href="tablet1.html">MORE DETAITS</a></h5>
+    <button onclick="one('add4');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="tab2.jpg" width="170px" height="200px">
+        <h3>Samsung Galaxy <br>Tab S10+</h3>     
+        <h4>Rs.89,999</h4>
+     <h5><a href="tablet2.html">MORE DETAITS</a></h5>
+    <button onclick="one('add5');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="tab3.jpg" width="170px" height="200px">
+        <h3>Mi Xiaomi<br>Pad 6</h3>     
+        <h4>Rs.10,999</h4>
+     <h5><a href="tablet3.html">MORE DETAITS</a></h5>
+    <button onclick="one('add6');" class="add">ADD WISHLIST</button>
+  </div>
+  <hr>
+  <h1 id="power" class="underline"><u>POWER BANK</u></h1>
+  <div class="box4">
+        <img src="pb1.jpg" width="170px" height="200px">
+        <h3>boAt 20000 mAh<br>22.5 W <br>Power Bank</h3>     
+        <h4>Rs.1,699</h4>
+     <h5><a href="power1.html">MORE DETAITS</a></h5>
+    <button onclick="one('add7');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box4">
+        <img src="pb2.jpg" width="170px" height="200px">
+        <h3>FAHIG 50000 mAh <br>22 W <br>Power Bank</h3>     
+        <h4>Rs.1,430</h4>
+     <h5><a href="power2.html">MORE DETAITS</a></h5>
+    <button onclick="one('add8');" class="add">ADD WISHLIST</button>
+  </div>
+  <div class="box4">
+        <img src="pb3.jpg" width="170px" height="200px">
+        <h3>Portronics 20000 mAh 22.5 W Power Bank</h3>     
+        <h4>Rs.1,449</h4>
+     <h5><a href="power3.html">MORE DETAITS</a></h5>
+    <button onclick="one('add9');" class="add">ADD WISHLIST</button>
+    </div>
+  <hr>
+  <h1 id="head" class="underline"><u>BLUETOOTH HEADSETS</u></h1>
+  <div class="box4">
+        <img src="head1.jpg" width="170px" height="200px">
+        <h3>Aroma NB119 Titanium <br>Headset</h3>     
+        <h4>Rs.449</h4>
+     <h5><a href="headphone.html">MORE DETAITS</a></h5>
+    <button onclick="one('add10');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box4">
+        <img src="head2.jpg" width="170px" height="200px">
+        <h3>Mivi Duo <br>pods i3 Tws <br>Headset</h3>     
+        <h4>Rs.999</h4>
+     <h5><a href="headphone2.html">MORE DETAITS</a></h5>
+    <button onclick="one('add11');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box4">
+        <img src="head3.jpg" width="170px" height="200px">
+        <h3>TRIGGR Trinity with 40mm Drivers headset</h3>     
+        <h4>Rs.1,099</h4>
+     <h5><a href="headphone3.html">MORE DETAITS</a></h5>
+    <button onclick="one('add12');" class="add">ADD WISHLIST</button>
+    </div>
+  <hr>
+  <h1 id="backcover" class="underline"><u>MOBILE BACK COVER</u></h1>
+  <div class="box3">
+        <img src="back1.jpg" width="170px" height="200px">
+        <h3>AESTMO back cover</h3>     
+        <h4>Rs.369</h4>
+     <h5><a href="back1.html">MORE DETAITS</a></h5>
+    <button onclick="one('add13');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="back2.jpg" width="170px" height="200px">
+        <h3>Foncase Bumper Case back cover</h3>     
+        <h4>Rs.199</h4>
+     <h5><a href="back2.html">MORE DETAITS</a></h5>
+    <button onclick="one('add14');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="back3.jpg" width="170px" height="200px">
+        <h3>Forego <br>back cover</h3>     
+        <h4>Rs.259</h4>
+     <h5><a href="back3.html">MORE DETAITS</a></h5>
+    <button onclick="one('add15');" class="add">ADD WISHLIST</button>
+    </div>
+  <hr>
+  <h1 id="charger" class="underline"><u>MOBILE CHARGERS</u></h1>
+  <div class="box3">
+        <img src="charger1.jpg" width="170px" height="200px">
+        <h3>C TYPE CHARGER</h3>     
+        <h4>Rs.389</h4>
+     <h5><a href="charge1.html">MORE DETAITS</a></h5>
+    <button onclick="one('add16');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="charger2.jpg" width="170px" height="200px">
+        <h3>NORMAL TYPE CHARGER</h3>     
+        <h4>Rs.359</h4>
+     <h5><a href="charge2.html">MORE DETAITS</a></h5>
+    <button onclick="one('add17');" class="add">ADD WISHLIST</button>
+    </div>
+  <div class="box3">
+        <img src="charger3.jpg" width="170px" height="200px">
+        <h3>MULTIPIN FAST CHARGER</h3>     
+        <h4>Rs.399</h4>
+     <h5><a href="charge3.html">MORE DETAITS</a></h5>
+    <button onclick="one('add18');" class="add">ADD WISHLIST</button>
+    </div>
+  <hr>
+  <h1 id="contact" class="about">CONTACT</h1>
+  <table id="touch">
+    <tr >
+      <th colspan="2">GET IN TOUCH</th>
+    </tr>
+    <tr>
+      <td><b><i class="fa-solid fa-phone"></i><br>Phone Number<br>9344232465</b></td>
+      <td><b><i class="fa-solid fa-envelope"></i><br>Email<br>smartmygo6542@gmail.com</b></td>
+    </tr>
+    <tr>
+      <td><b><i class="fa-solid fa-location-dot"></i><br>Location<br>Salem new bus stand <br>opposite</b></td>
+      <td><b><i class="fa-solid fa-clock"></i><br>Working Hours<br>Monday to saturday<br>09:00 - 06:00 PM</b></td>
+    </tr>
+  </table>
+  <br>
+ <table id="con">
+   <form name="menuForm" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+     <input type="hidden" name="access_key" value="f353285a-c2a9-405c-b3db-47754b5171f9">
+    <tr>
+      <th colspan="2">CONTACT US</th>
+    </tr>
+    <tr>
+      <td><b>Name<br><input type="text" class="come" id="name" name="name" required=""></b></td>
+      <td><b>Email<br><input type="email" class="come" id="email" name="email" required="" ></b></td>
+    </tr>
+    <tr>
+      <td><b>Number<br><input type="tel" class="come" id="number" name="number" required=""></b></td>
+      <td><b>Address<br><input type="text" class="come" id="address" name="address" required=""></b></td>
+    </tr>
+     <tr>
+       <tr>
+         <th colspan="2">GIVE YOUR SUGGESTION</th>
+       </tr>
+       <td colspan="2"><textarea id="feedback" name="feedback" rows="10" cols="40" required=""></textarea></td>
+     </tr>
+     <tr>
+       <td colspan="2"><input type="submit" id="submit1" value="SUBMIT"> <input type="reset" id="submit1" value="RESET"></td>
+     </tr>
+   </form>
+  </table>
+  <br><a id="up" href="#"><i class="fa-solid fa-angle-up"></i></a><br><br><br><br>
+  <div id="footer">
+    <h1 id="links"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-youtube"></i></h1>
+    <h3 id="nav"><a href="#">HOME</a> <a href="#about">ABOUT</a> <a href="#category">CATEGORIES</a> <a href="#product">PRODUCTS</a> <a href="">CONTACT</a></h3>
+    <h3 id="copy">Copyright © 2025; Designed by Gowtham G</h3>
+  </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="phone1.css">
+  <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+  <title>Samsung Galaxy Tab S10+</title>
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+      <script>
+        function onGooglePayLoaded() {
+            const paymentsClient = new google.payments.api.PaymentsClient({environment: 'PRODUCTION'});
+
+            const button = paymentsClient.createButton({
+                onClick: onGooglePaymentButtonClicked
+            });
+
+            document.getElementById('gpay-button-container').appendChild(button);
+        }
+
+        async function onGooglePaymentButtonClicked() {
+            const paymentDataRequest = {
+                apiVersion: 2,
+                apiVersionMinor: 0,
+                allowedPaymentMethods: [{
+                    type: 'CARD',
+                    parameters: {
+                        allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                        allowedCardNetworks: ['VISA', 'MASTERCARD']
+                    },
+                    tokenizationSpecification: {
+                        type: 'PAYMENT_GATEWAY',
+                        parameters: {
+                            gateway: 'example', // Replace with actual payment gateway
+                            gatewayMerchantId: 'your-merchant-id'
+                        }
+                    }
+                }],
+                merchantInfo: {
+                    merchantId: 'your-merchant-id',
+                    merchantName: 'SMART MYGO'
+                },
+                transactionInfo: {
+                    totalPriceStatus: 'FINAL',
+                    totalPrice: '91058.00',
+                    currencyCode: 'INR'
+                }
+            };
+
+            try {
+                const paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+                const paymentData = await paymentsClient.loadPaymentData(paymentDataRequest);
+                console.log('Payment successful', paymentData);
+            } catch (error) {
+                console.error('Payment failed', error);
+            }
+        }
+    </script>
+</head>
+<body onload="onGooglePayLoaded()">
+  <header>
+    <img id="logo" src="logo1.jpg" height="80px" width="80px">
+    <h3 id="smart">SMART MYGO</h3>
+     <h2><a href="index.html"><i class="fa-solid fa-house"></i></a></h2>
+  </header>
+  <br><br>
+  <div class="gow">
+    <img src="tab2.jpg" width="600px" height="600px">
+    <section id="cash">
+    <h1>Cash on delivery<br>available</h1>
+    <h1>Return policy<br>with in 10 days</h1>
+    </section>
+      <table>
+        <tr>
+          <th style="background-color: pink;" colspan="2">Details</th>
+        </tr>
+      <tr>
+        <td>
+          Device name
+        </td>
+        <td>
+         Samsung Galaxy Tab S10+
+        </td>
+      </tr>
+      <tr>
+        <td>Connectivity</td>
+        <td>4G</td>
+      </tr>
+      <tr>
+        <td>RAM | ROM</td>
+        <td>12GB RAM | 256GB ROM</td>
+      </tr>
+      <tr>
+        <td>Processor | OS</td>
+        <td>Media Tek Dimensity 9300 | Android</td>
+      </tr>
+      <tr>
+        <td>Primary Camera</td>
+        <td>13MP</td>
+      </tr>
+      <tr>
+        <td>Secondary Camera</td>
+        <td>12MP</td>
+      </tr>
+      <tr>
+        <td>Clock Speed</td>
+        <td>3.4 Hz</td>
+      </tr>
+      <tr>
+        <td>Battery</td>
+        <td>10090 mAh</td>
+      </tr>   
+        <tr>
+          <th style="background-color: pink;" colspan="2">Other Details</th>
+        </tr>
+        <tr>
+          <td>Network Type</td>
+          <td>4G VOLTE, 4G, 3G, 2G</td>
+        </tr>
+        <tr>
+          <td>Sim Type</td>
+          <td>Dual Sim</td>
+        </tr>
+        <tr>
+          <td>Expandable Storage</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Audio Jack</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Quick Charging</td>
+          <td>Yee</td>
+        </tr>
+        <tr>
+          <td>Warranty</td>
+          <td>1 Year</td>
+        </tr>
+        <tr>
+          <th id="order" colspan="2"><button class="style" onclick="show();"><a href="#ordertable">ORDER NOW</a></button></th>
+        </tr>
+    </table>
+  </div><br><br>
+  
+  <div class="gow" id="comeone">
+   <table id="ordertable">
+    <form name="menuForm" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+       <input type="hidden" name="access_key" value="f353285a-c2a9-405c-b3db-47754b5171f9">
+      <tr>
+        <th style="background-color: pink;" colspan="2">WELCOME TO ORDER <button id="xmark" onclick="cancel();"><i class="fa-solid fa-xmark"></i></button></th>
+      </tr>
+      <tr>
+        <td>Full Name</td>
+        <td><input type="text" id="name" name="name" required=""></td>
+      </tr>
+      <tr>
+        <td>Number</td>
+        <td><input type="tel" id="number" name="number" required=""></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" required=""></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="address" required=""></td>
+      </tr>
+      <tr>
+        <td>Payment Method</td>
+        <td><select name="paymet method" id="amount" required="">
+          <option>Cash On Devlevery</option>
+          <option>Online Payment</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th style="background-color: pink;" colspan="2">Price Details</th>
+      </tr>
+      <tr>
+        <td>Price (1 Item)</td>
+        <td>₹ 1,01,999</td>
+      </tr>
+      <tr>
+        <td>Discount</td>
+        <td>₹ 11,000</td>
+      </tr>
+      <tr>
+        <td>Delivery Charge</td>
+        <td>Free Delivery</td>
+      </tr>    
+      <tr>
+        <td>Secured Packaging Fee</td>
+        <td>59</td>
+      </tr>      
+      <tr>
+        <td>Total (Final) Amount</td>
+        <td>91,058</td>
+      </tr>
+      <tr>
+        <td>Order Confirmation</td>
+        <td>
+         <select name="Device" id="black" size="1" multiple="multiple" required="">
+             <option>Samsung Galaxy Tab S10 + </option>    
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Pay with Google Pay</td>
+        <td><div id="gpay-button-container"></div></td>
+      </tr>      
+      <tr>
+        <th colspan="2"><input id="style" type="submit" value="PLACE ORDER"></th>     
+      </tr>
+    </form>
+  </table>
+  </div>
+  <script type="text/javascript">
+     function show() {
+       document.getElementById("comeone").style.display = "block";
+     }
+     function cancel() {
+       document.getElementById("comeone").style.display = "none";
+     }
+  </script>
+</body>
+</html>

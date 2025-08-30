@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="phone1.css">
+  <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+  <title>AESTMO back cover mobile phone</title>
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+       <script>
+        function onGooglePayLoaded() {
+            const paymentsClient = new google.payments.api.PaymentsClient({environment: 'PRODUCTION'});
+
+            const button = paymentsClient.createButton({
+                onClick: onGooglePaymentButtonClicked
+            });
+
+            document.getElementById('gpay-button-container').appendChild(button);
+        }
+
+        async function onGooglePaymentButtonClicked() {
+            const paymentDataRequest = {
+                apiVersion: 2,
+                apiVersionMinor: 0,
+                allowedPaymentMethods: [{
+                    type: 'CARD',
+                    parameters: {
+                        allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                        allowedCardNetworks: ['VISA', 'MASTERCARD']
+                    },
+                    tokenizationSpecification: {
+                        type: 'PAYMENT_GATEWAY',
+                        parameters: {
+                            gateway: 'example', // Replace with actual payment gateway
+                            gatewayMerchantId: 'your-merchant-id'
+                        }
+                    }
+                }],
+                merchantInfo: {
+                    merchantId: 'your-merchant-id',
+                    merchantName: 'Your Business Name'
+                },
+                transactionInfo: {
+                    totalPriceStatus: 'FINAL',
+                    totalPrice: '290.00',
+                    currencyCode: 'INR'
+                }
+            };
+
+            try {
+                const paymentsClient = new google.payments.api.PaymentsClient({environment: 'PRODUCTION'});
+                const paymentData = await paymentsClient.loadPaymentData(paymentDataRequest);
+                console.log('Payment successful', paymentData);
+            } catch (error) {
+                console.error('Payment failed', error);
+            }
+        }
+    </script>
+</head>
+<body onload="onGooglePayLoaded()">
+  <header>
+    <img id="logo" src="logo1.jpg" height="80px" width="80px">
+    <h3 id="smart">SMART MYGO</h3>
+     <h2><a href="index.html"><i class="fa-solid fa-house"></i></a></h2>
+  </header>
+  <br><br>
+  <div class="gow">
+    <img src="back1.jpg" width="600px" height="600px">
+    <section id="cash">
+    <h1>Cash on delivery<br>available</h1>
+    <h1>Return policy<br>with in 10 days</h1>
+    </section>
+      <table>
+        <tr>
+          <th style="background-color: pink;" colspan="2">Details</th>
+        </tr>
+      <tr>
+        <td>
+          Name
+        </td>
+        <td>
+         AESTMO Back Cover For Mobile Phones
+        </td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>Black</td>
+      </tr>         
+        <tr>
+          <th style="background-color: pink;" colspan="2">Other Details</th>
+        </tr>
+        <tr>
+          <td>Suitable For</td>
+          <td>Mobile</td>
+        </tr>
+        <tr>
+          <td>Material</td>
+          <td>Polycarbonate</td>
+        </tr>
+        <tr>
+          <td>Theme</td>
+          <td>No Theme</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>Back Cover</td>
+        </tr>
+        <tr>
+          <td>Warranty</td>
+          <td>1 Year</td>
+        </tr>
+        <tr>
+          <th id="order" colspan="2"><button class="style" onclick="show();"><a href="#ordertable">ORDER NOW</a></button></th>
+        </tr>
+    </table>
+  </div><br><br>
+  
+  <div class="gow" id="comeone">
+   <table id="ordertable">
+    <form name="menuForm" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+       <input type="hidden" name="access_key" value="f353285a-c2a9-405c-b3db-47754b5171f9">
+      <tr>
+        <th style="background-color: pink;" colspan="2">WELCOME TO ORDER <button id="xmark" onclick="cancel();"><i class="fa-solid fa-xmark"></i></button></th>
+      </tr>
+      <tr>
+        <td>Full Name</td>
+        <td><input type="text" id="name" name="name" required=""></td>
+      </tr>
+      <tr>
+        <td>Number</td>
+        <td><input type="tel" id="number" name="number" required=""></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" required=""></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="address" required=""></td>
+      </tr>
+      <tr>
+        <td>Payment Method</td>
+        <td><select name="paymet method" id="amount" required="">
+          <option>Cash On Devlevery</option>
+          <option>Online Payment</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th style="background-color: pink;" colspan="2">Price Details</th>
+      </tr>
+      <tr>
+        <td>Price (1 Item)</td>
+        <td>₹ 330</td>
+      </tr>
+      <tr>
+        <td>Discount</td>
+        <td>₹ 50</td>
+      </tr>
+      <tr>
+        <td>Delivery Charge</td>
+        <td>Free Delivery</td>
+      </tr>    
+      <tr>
+        <td>Secured Packaging Fee</td>
+        <td>10</td>
+      </tr>      
+      <tr>
+        <td>Total (Final) Amount</td>
+        <td>₹ 290</td>
+      </tr>
+      <tr>
+        <td>Order Confirmation</td>
+        <td>
+         <select name="Device" id="black" size="1" multiple="multiple" required="">
+             <option>AESTMO Mobile Back Cover </option>          
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Pay with Google Pay</td>
+        <td><div id="gpay-button-container"></div></td>
+      </tr>      
+      <tr>
+        <th colspan="2"><input id="style" type="submit" value="PLACE ORDER"></th>     
+      </tr>
+    </form>
+  </table>
+  </div>
+  <script type="text/javascript">
+     function show() {
+       document.getElementById("comeone").style.display = "block";
+     }
+     function cancel() {
+       document.getElementById("comeone").style.display = "none";
+     }
+  </script>
+</body>
+</html>
