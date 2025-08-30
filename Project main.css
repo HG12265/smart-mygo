@@ -340,7 +340,7 @@ table ,td,tr,th{
 }
 
 #links i{
-  font-size: 25px;
+  font-size: 15px;
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -355,7 +355,7 @@ table ,td,tr,th{
 #copy{
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 10px;
 }
 #up{
   float: right;
