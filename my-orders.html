@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - SMART MYGO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Put this header structure into my-orders.html -->
+<header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="header-center">
+            <a href="index.html" class="logo-link">
+                <h1 class="site-title">SMART MYGO</h1>
+            </a>
+        </div>
+        <div class="header-right">
+            <img id="logo" src="images/logo1.jpg" alt="SMART MYGO Logo" class="header-logo-mobile">
+            <div class="header-icons" id="header-user-actions"></div>
+        </div>
+      </div>
+    </div>
+</header>
+<div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
+    <div class="mobile-nav-header">
+        <h3>Menu</h3>
+        <button class="close-btn" id="mobile-nav-close">&times;</button>
+    </div>
+    <div class="mobile-nav-links"></div>
+    <div class="mobile-user-section" id="mobile-user-section"></div>
+</div>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title">My Order History</h2>
+            <div id="orders-list-container">
+                <!-- User's orders will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">Copyright © 2025; Designed by Gowtham G</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

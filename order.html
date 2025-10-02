@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - SMART MYGO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Left Part: Mobile Menu Icon -->
+        <div class="header-left">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- Center Part: Site Title -->
+        <div class="header-center">
+            <a href="index.html" class="logo-link">
+                <h1 class="site-title">SMART MYGO</h1>
+            </a>
+        </div>
+        <!-- Right Part: Holds Mobile Logo OR Desktop Icons -->
+        <div class="header-right">
+            <!-- Mobile-only Logo -->
+            <img id="logo" src="images/logo1.jpg" alt="SMART MYGO Logo" class="header-logo-mobile">
+            <!-- Desktop User Actions (Dynamically Filled by JS) -->
+            <div class="header-icons" id="header-user-actions">
+              <!-- JS will populate this with login/wishlist or welcome/logout for desktop -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Sidebar (Hidden by default) -->
+  <div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
+    <div class="mobile-nav-header">
+        <h3>Menu</h3>
+        <button class="close-btn" id="mobile-nav-close">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+        <!-- Main links will be added here by JS -->
+    </div>
+    <div class="mobile-user-section" id="mobile-user-section">
+        <!-- User login/logout links will be added here by JS -->
+    </div>
+  </div>
+    <main>
+        <div class="container">
+            <div class="order-container">
+                <h2 class="section-title">Confirm Your Order</h2>
+                <div class="order-grid">
+                    <form class="order-form" id="order-form">
+                        <h3>1. Shipping Details</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" id="mobile" name="number" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="4" required></textarea>
+                        </div>
+
+                        <h3>2. Payment Method</h3>
+                         <div class="form-group">
+                            <label for="paymentMethod">Select Payment Method</label>
+                            <select id="paymentMethod" name="payment_method">
+                                <option value="Cash on Delivery">Cash on Delivery</option>
+                                <option value="Online Payment">Online Payment (UPI/Card)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Place Order</button>
+                    </form>
+
+                    <div class="price-summary">
+                        <img src="" alt="Product Image" id="order-product-image" class="order-product-image">
+                        <h3 id="order-product-name">Loading...</h3>
+                        <div class="product-specs" id="order-product-specs">
+                            <!-- Specs will be added here by JS -->
+                        </div>
+                        <hr>
+                        <h4>Price Details</h4>
+                        <div class="summary-item">
+                            <span>Price:</span>
+                            <span id="order-product-price">Loading...</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Delivery Charge:</span>
+                            <span>FREE</span>
+                        </div>
+                        <hr>
+                        <div class="summary-item total">
+                            <span>Total Amount:</span>
+                            <strong id="order-total-amount">Loading...</strong>
+                        </div>
+                        <div class="return-policy">
+                            <p><i class="fa-solid fa-shield-halved"></i> 10-Day Return Policy</p>
+                            <p><i class="fa-solid fa-truck-fast"></i> Safe & Secure Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="order-confirmation-overlay" id="confirmation-overlay">
+        <div class="order-confirmation-modal">
+            <i class="fa-solid fa-circle-check confirmation-icon"></i>
+            <h3>Order Placed Successfully!</h3>
+            <p>Thank you for your purchase. You will receive a confirmation message shortly.</p>
+            <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">Copyright © 2025; Designed by Gowtham G</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

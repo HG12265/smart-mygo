@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART MYGO - Premium Mobiles and Accessories</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/9a4b5b09a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ======================= -->
+  <!--    FINAL HEADER         -->
+  <!-- ======================= -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Left Part: Mobile Menu Icon -->
+        <div class="header-left">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- Center Part: Site Title -->
+        <div class="header-center">
+            <a href="index.html" class="logo-link">
+                <h1 class="site-title">SMART MYGO</h1>
+            </a>
+        </div>
+        <!-- Right Part: Holds Mobile Logo OR Desktop Icons -->
+        <div class="header-right">
+            <!-- Mobile-only Logo -->
+            <img id="logo" src="images/logo1.jpg" alt="SMART MYGO Logo" class="header-logo-mobile">
+            <!-- Desktop User Actions (Dynamically Filled by JS) -->
+            <div class="header-icons" id="header-user-actions">
+              <!-- JS will populate this with login/wishlist or welcome/logout for desktop -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Sidebar (Hidden by default) -->
+  <div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
+    <div class="mobile-nav-header">
+        <h3>Menu</h3>
+        <button class="close-btn" id="mobile-nav-close">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+        <!-- Main links will be added here by JS -->
+    </div>
+    <div class="mobile-user-section" id="mobile-user-section">
+        <!-- User login/logout links will be added here by JS -->
+    </div>
+  </div>
+
+  <!-- Wishlist Sidebar -->
+  <div class="wishlist-sidebar" id="wishlist-sidebar">
+    <div class="wishlist-header">
+      <h2>WISHLIST</h2>
+      <button class="close-btn" id="wishlist-close">&times;</button>
+    </div>
+    <div class="wishlist-items" id="wishlist-items">
+      <!-- Wishlist items will be added here by JavaScript -->
+    </div>
+  </div>
+
+  <main>
+    <section id="banner">
+      <div class="container banner-content">
+        <h1>WELCOME</h1>
+        <h2>Premium Quality</h2>
+        <p>Mobile Phones, Tablets, And Accessories!</p>
+        <a href="#product" class="btn btn-primary">Shop Now &rarr;</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">ABOUT US</h2>
+        <p>Welcome to <b>SMART MYGO</b>, your trusted destination for the latest mobile phones, accessories, and unbeatable deals! We are passionate about keeping you connected to the world with top brands like Apple, Samsung, Xiaomi, and more. Enjoy competitive prices, guaranteed quality, and fast, secure delivery. Our mission is to provide a seamless shopping experience. Browse our collection today and experience the SMART MYGO difference!</p>
+      </div>
+    </section>
+
+    <section id="category" class="category-section">
+        <div class="container">
+            <h2 class="section-title">CATEGORIES</h2>
+            <div class="category-grid">
+                <a href="#phone" class="category-card"><img src="images/mobilephone.jpg" alt="Mobile Phones"><h3>Mobile Phones</h3></a>
+                <a href="#tab" class="category-card"><img src="images/tablet.jpg" alt="Tablets"><h3>Tablets</h3></a>
+                <a href="#power" class="category-card"><img src="images/powerbank.jpg" alt="Power Banks"><h3>Power Banks</h3></a>
+                <a href="#head" class="category-card"><img src="images/headset.webp" alt="Bluetooth Headsets"><h3>Bluetooth Headsets</h3></a>
+                <a href="#backcover" class="category-card"><img src="images/backcover.jpg" alt="Back Covers"><h3>Back Covers</h3></a>
+                <a href="#charger" class="category-card"><img src="images/charger.jpg" alt="Phone Chargers"><h3>Phone Chargers</h3></a>
+            </div>
+        </div>
+    </section>
+
+<!-- In index.html, replace the entire product section with this -->
+<section id="product" class="product-section">
+    <div class="container">
+        <h2 class="section-title">OUR PRODUCTS</h2>
+
+        <!-- MOBILE PHONES -->
+        <h3 id="phone" class="product-category-title">MOBILE PHONES</h3>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/phone1.jpg" alt="Realme P1 5G">
+                <h3>Realme P1 5G</h3><p class="price">Rs. 15,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="1" data-product-name="Realme P1 5G">Add to Wishlist</button>
+                    <a href="order.html?id=1" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/phone2.jpg" alt="Poco M6 5G">
+                <h3>Poco M6 5G</h3><p class="price">Rs. 8,999</p>
+                <div class="product-card-buttons">
+                     <button class="btn add-to-wishlist" data-product-id="2" data-product-name="Poco M6 5G">Add to Wishlist</button>
+                     <a href="order.html?id=2" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/phone3.jpg" alt="Vivo T3X 5G">
+                <h3>Vivo T3X 5G</h3><p class="price">Rs. 13,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="3" data-product-name="Vivo T3X 5G">Add to Wishlist</button>
+                    <a href="order.html?id=3" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- TABLETS -->
+        <h3 id="tab" class="product-category-title">TABLETS</h3>
+        <div class="product-grid">
+             <div class="product-card">
+                <img src="images/tab1.jpg" alt="Realme Pad 2 Lite">
+                <h3>Realme Pad 2 Lite</h3><p class="price">Rs. 22,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="4" data-product-name="Realme Pad 2 Lite">Add to Wishlist</button>
+                    <a href="order.html?id=4" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/tab2.jpg" alt="Samsung Galaxy Tab S10+">
+                <h3>Samsung Galaxy Tab S10+</h3><p class="price">Rs. 89,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="5" data-product-name="Samsung Galaxy Tab S10+">Add to Wishlist</button>
+                    <a href="order.html?id=5" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="images/tab3.jpg" alt="Mi Xiaomi Pad 6">
+                <h3>Mi Xiaomi Pad 6</h3><p class="price">Rs. 10,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="6" data-product-name="Mi Xiaomi Pad 6">Add to Wishlist</button>
+                    <a href="order.html?id=6" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- POWER BANKS -->
+        <h3 id="power" class="product-category-title">POWER BANKS</h3>
+        <div class="product-grid">
+             <div class="product-card">
+                <img src="images/pb1.jpg" alt="Ambrane Power Bank">
+                <h3>Ambrane Power Bank</h3><p class="price">Rs. 2,499</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="7" data-product-name="Ambrane Power Bank">Add to Wishlist</button>
+                    <a href="order.html?id=7" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pb2.jpg" alt="MI Power Bank 3i">
+                <h3>MI Power Bank 3i</h3><p class="price">Rs. 2,149</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="8" data-product-name="MI Power Bank 3i">Add to Wishlist</button>
+                    <a href="order.html?id=8" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADSETS -->
+        <h3 id="head" class="product-category-title">BLUETOOTH HEADSETS</h3>
+        <div class="product-grid">
+             <div class="product-card">
+                <img src="images/head1.jpg" alt="OnePlus Bullets Z2">
+                <h3>OnePlus Bullets Z2</h3><p class="price">Rs. 1,599</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="9" data-product-name="OnePlus Bullets Z2">Add to Wishlist</button>
+                    <a href="order.html?id=9" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/head2.jpg" alt="Boult Audio Z40">
+                <h3>Boult Audio Z40</h3><p class="price">Rs. 1,099</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="10" data-product-name="Boult Audio Z40">Add to Wishlist</button>
+                    <a href="order.html?id=10" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BACK COVERS -->
+        <h3 id="backcover" class="product-category-title">BACK COVERS</h3>
+        <div class="product-grid">
+             <div class="product-card">
+                <img src="images/back1.jpg" alt="iPhone 15 Pro Cover">
+                <h3>iPhone 15 Pro Cover</h3><p class="price">Rs. 499</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="11" data-product-name="iPhone 15 Pro Cover">Add to Wishlist</button>
+                    <a href="order.html?id=11" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/back2.jpg" alt="Samsung S24 Ultra Cover">
+                <h3>Samsung S24 Ultra Cover</h3><p class="price">Rs. 599</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="12" data-product-name="Samsung S24 Ultra Cover">Add to Wishlist</button>
+                    <a href="order.html?id=12" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHARGERS -->
+        <h3 id="charger" class="product-category-title">PHONE CHARGERS</h3>
+        <div class="product-grid">
+             <div class="product-card">
+                <img src="images/charger1.jpg" alt="Apple 20W USB-C Adapter">
+                <h3>Apple 20W Adapter</h3><p class="price">Rs. 1,599</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="13" data-product-name="Apple 20W Adapter">Add to Wishlist</button>
+                    <a href="order.html?id=13" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/charger2.jpg" alt="Samsung 45W Travel Adapter">
+                <h3>Samsung 45W Adapter</h3><p class="price">Rs. 2,999</p>
+                <div class="product-card-buttons">
+                    <button class="btn add-to-wishlist" data-product-id="14" data-product-name="Samsung 45W Adapter">Add to Wishlist</button>
+                    <a href="order.html?id=14" class="btn btn-primary order-now">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">CONTACT US</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>GET IN TOUCH</h3>
+            <p><i class="fa-solid fa-phone"></i> 9344232465</p>
+            <p><i class="fa-solid fa-envelope"></i> smartmygo6542@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Salem new bus stand, opposite</p>
+            <p><i class="fa-solid fa-clock"></i> Monday to Saturday, 09:00 - 06:00 PM</p>
+          </div>
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+             <input type="hidden" name="access_key" value="f353285a-c2a9-405c-b3db-47754b5171f9">
+            <h3>SEND A MESSAGE</h3>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="feedback" rows="5" placeholder="Your Suggestion" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-nav">
+        <a href="#">HOME</a> <a href="#about">ABOUT</a> <a href="#category">CATEGORIES</a> <a href="#product">PRODUCTS</a> <a href="#contact">CONTACT</a>
+      </div>
+      <p class="copyright">Copyright © 2025; Designed by Gowtham G</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
